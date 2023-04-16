@@ -64,7 +64,6 @@ public class BaseClass {
 
         // This new batch for Jenkins
         String newImageString = "http://localhost:8080/job/ExtentReport/ws/test-output/ScreenShot/" + filename + "_" + dateName + ".png";
-
         return destination;
     }
 
