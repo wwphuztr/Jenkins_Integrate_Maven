@@ -53,7 +53,7 @@ public class BaseClass {
         String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
         File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-        String destination = System.getProperty("user.dir")+"\\test-output\\ScreenShot\\"+filename+"_"+dateName+".png";
+        String destination = System.getProperty("user.dir")+"\\test-output\\ScreenShot\\"+filename+"_"+dateName+".jpg";
         File finalDestination= new File(destination);
         try {
             FileUtils.copyFile(source, finalDestination);
